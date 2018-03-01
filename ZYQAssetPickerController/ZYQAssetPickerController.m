@@ -1062,7 +1062,7 @@ static UIColor *titleColor;
         [smartAlbumsFetchResult enumerateObjectsUsingBlock:^(PHAssetCollection * _Nonnull collection, NSUInteger idx, BOOL *stop) {
             showNotAllowed=NO;
             PHFetchOptions *fetchOptionsAlbums=[[PHFetchOptions alloc] init];
-            fetchOptionsAlbums.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"creationDate" ascending:YES]];
+            //fetchOptionsAlbums.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"creationDate" ascending:YES]];
 
             switch (picker.assetsFilter) {
                 case ZYQAssetsFilterAllVideos:
